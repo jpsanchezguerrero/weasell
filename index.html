@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html lang="es">
+<head>
+	<meta name="description" content="Gestion de procesos empresariales en la nube" />
+	<meta name="keywords" content="aplicacion, nube, procesos, empresa, pequeña, mediana, webapp, cloud" />
+        <meta charset="UTF-8" />
+	<title>Weasell</title>
+        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+	<script src="js/jquery.spritely-0.6.1.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+	<STYLE>
+	#bird {
+               background: transparent url(images/bird-forward-back.png) 0 0 no-repeat;
+               position: absolute;
+               top: 150px;
+               left: 100px;
+               width: 180px;
+               height: 123px;
+               z-index: 2000;
+               cursor: pointer;
+        }
+	</STYLE>
+
+	<script type="text/javascript">
+  	 var _gaq = _gaq || [];
+  	 _gaq.push(['_setAccount', 'UA-29919879-1']);
+  	 _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+</head>
+
+<body>
+ 	<div id="cont">
+	 <p id="title">Weasell</p>
+	 <p id="sub">Cloud App (En contrucción..)</p>
+	</div>
+        <div id="bird"></div>
+	<div id="contact">
+                <p style="font-size: 30px;">Nos quieres decir algo? </p>
+                <form id="contactForm" action="form.php" method="post">
+                        <p><label>Nombre:<input class="text" name="nombre" id="nombre" type="text" placeholder="Quien eres?" required /></label></p>
+                        <p><label>Comentario:<textarea class="text" name="comentario" id="comentario" type="text" rows="3" placeholder="Que nos quieres decir?" multiline="false" required ></textarea></label></p>
+                        <p><label>Mail:<input class="text" name="mail" id="mail" type="email" placeholder="Como te contactamos?" required /></label></p>
+                        <input type="submit" id="enviar" value="Enviar" />
+
+                </div>
+        </body>
+</html>
+
